@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }}Liste des annonces{% endblock %}
+
+{% block body %}
+<h3>Découvrez les annonces de location des voitures</h3>
+{{dump(advertLists)}}
+
+<div uk-grid>
+      {% for advert in advertLists %}
+      <div class="uk-card uk-card-default">
+          <div class="uk-card-header">
+         
+             <h2>{{ advert.title}} €</h4>
+          </div>
+          <div class="uk-card-body" style="max-width: 200px;">
+           
+            <h3>{{ advert.description }}</h3>
+            <p>
+              {{ advert.city }}
+            </p>
+            <p>
+              {{ advert.carYear }}
+            </p>
+            <p>
+              {{ advert.nbKm }}
+            </p>
+            <p>
+              {{ advert.nbDays }}
+            </p>
+            <h4>{{ advert.price}} €</h4>
+          </div>
+      </div>
+ {% endfor %}
+{% endblock %}

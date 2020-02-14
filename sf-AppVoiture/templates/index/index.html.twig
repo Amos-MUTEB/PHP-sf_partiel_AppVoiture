@@ -1,0 +1,45 @@
+{% extends 'root.html.twig' %} {% block title %}Voiture en ligne !{% endblock %} {%
+block body %}
+<div
+  class="uk-background-cover uk-flex uk-flex-center uk-flex-middle uk-flex-column"
+  style="height: 100vh; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.26), rgba(19, 19, 19, 0.801)), url(/img/bg.jpg);"
+>
+  <h1 class="uk-heading-large" style="color: #DDD;">
+    RENT YOUR CAR 
+  </h1>
+  <div class="uk-margin-top">
+    <a
+      href="{{ path('advertList') }}"
+      class="uk-button uk-button-primary uk-button-large uk-text-large uk-padding-small"
+    >
+      COMMENCER
+    </a>
+  </div>
+  <div class="uk-margin-top">
+    <a
+      href=""
+      uk-icon="icon: facebook; ratio: 2.5"
+      class="uk-text-large uk-margin-right uk-link-reset"
+      style="color: #BBB !important;"
+    ></a>
+    <a
+      href=""
+      uk-icon="icon: twitter; ratio: 2.5"
+      class="uk-text-large uk-margin-right uk-link-reset"
+      style="color: #BBB !important;"
+    ></a>
+    <a
+      href=""
+      uk-icon="icon: github; ratio: 2.5"
+      class="uk-text-large uk-margin-right uk-link-reset"
+      style="color: #BBB !important;"
+    ></a>
+    <a
+      href=""
+      uk-icon="icon: instagram; ratio: 2.5"
+      class="uk-text-large uk-margin-right uk-link-reset"
+      style="color: #BBB !important;"
+    ></a>
+  </div>
+</div>
+{% endblock %}
